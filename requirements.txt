@@ -5,3 +5,4 @@ langchain
 pinecone-client 
 fastapi 
 uvicorn 
+langchain_pinecone
