@@ -5,7 +5,7 @@ def text_to_speech(text):
     response = requests.post(
     'https://api.v6.unrealspeech.com/stream',
     headers = {
-        'Authorization' : voice_api
+        'Authorization' : st.secrets['voice_api']
     },
     json = {
         'Text': text, # Up to 1000 characters
@@ -20,7 +20,7 @@ def text_to_speech(text):
     
 
 # Define the URL of your chatbot API
-API_URL = my_api_endpoint
+API_URL = st.secrets['my_api_endpoint']
 # Function to send a message to the chatbot API and get a response
 def send_message(message):
     try:
