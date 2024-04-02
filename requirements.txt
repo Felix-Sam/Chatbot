@@ -6,3 +6,4 @@ pinecone-client
 fastapi 
 uvicorn 
 langchain_pinecone
+streamlit
