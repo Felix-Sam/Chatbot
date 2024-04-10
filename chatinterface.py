@@ -35,7 +35,7 @@ def send_message(message):
 
 # Streamlit app code
 def main():
-    st.title("Bhuman.AI Chatbot Interface")
+    st.title("Company Bot [Bhuman.AI Bot]")
     # Create a text input for user to enter messages
     user_input = st.text_input("Enter a message")
 
@@ -45,6 +45,7 @@ def main():
         if bot_response is not None:
             st.text_area("Bot's Reply", value=bot_response, height=200)
             audio = text_to_speech(bot_response)
+            st.title("Audio Response")
             st.audio(audio)
 if __name__ == "__main__":
     main()
